@@ -8,7 +8,7 @@ while i < len(my_list):
         if my_list[i].isdigit():
             my_list[i] = f'{int(my_list[i]):02d}'
         else:
-            el = my_list[i][0] + f'{int(my_list[i]):02d}'
+            my_list[i] = my_list[i][0] + f'{int(my_list[i]):02d}'
         my_list.insert(i, '"')
         my_list.insert(i + 2, '"')
         i += 2
